@@ -1,11 +1,11 @@
 {
   "about": {
     "name": "Joyce Silva",
-    "photo": "/profile.jpg",
+    "photo": "./public/profile.jpg",
     "title": "Desenvolvedora Software",
     "resume": "resume.pdf",
     "shortDescription": "Java • Python • Azure • AWS ",
-    "description": "Desenvolvedora Backend com sólida base em arquitetura de APIs RESTful e experiência prática em bancos de dados relacionais como Oracle e PostgreSQL. Atualmente, curso o último semestre de Desenvolvimento de Software Multiplataforma na FATEC Jessen Vidal, onde aprofundo conhecimentos em sistemas escaláveis e segurança. Durante minha trajetória na TecSUS, atuei diretamente em projetos críticos de migração de dados e na implementação de processos de anonimização em conformidade com a LGPD. Tenho vivência em squads ágeis, utilizando Docker, AWS e pipelines de CI/CD para garantir entregas de valor com alta performance e estabilidade.",
+    "description": "Tenho 24 anos e possuo um diploma técnico em administração. Atualmente, estudo Desenvolvimento de Software Multiplataforma na FATEC Prof. Jessen Vidal, em São José dos Campos. Desde meu primeiro contato com a programação, desenvolvi um forte interesse pela área devido à sua natureza desafiadora e à constante oportunidade de aprendizado.",
     "skills": [
       "Java (Spring Boot)",
       "Python (FastAPI/Flask)",
