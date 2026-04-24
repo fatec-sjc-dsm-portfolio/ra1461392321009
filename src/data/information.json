@@ -1,7 +1,7 @@
 {
   "about": {
     "name": "Joyce Silva",
-    "photo": "./public/profile.jpg",
+    "photo": "/profile.jpg",
     "title": "Desenvolvedora Software",
     "resume": "resume.pdf",
     "shortDescription": "Java • Python • Azure • AWS ",

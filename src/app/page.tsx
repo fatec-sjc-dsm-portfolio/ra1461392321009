@@ -26,7 +26,7 @@ export default function Portfolio() {
           title={about.title} 
           shortDescription={about.shortDescription} 
           resume={about.resume} 
-          image={about.photo}
+          image={`/ra1461392321009${about.photo}`}
         />
         
         <About 
