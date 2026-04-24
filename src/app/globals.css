@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  
+  --color-chess-cream: #F3E5DC;
+  --color-chess-ebony: #2A1B10;
+}
+
+@layer base {
+  :root {
+    --background: #F3E5DC;
+    --foreground: #2A1B10;
+  }
+
+  body {
+    @apply bg-chess-cream text-chess-ebony selection:bg-chess-ebony selection:text-chess-cream;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .chess-grid-bg {
+    background-image: 
+      linear-gradient(45deg, #2A1B10 25%, transparent 25%), 
+      linear-gradient(-45deg, #2A1B10 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, #2A1B10 75%), 
+      linear-gradient(-45deg, transparent 75%, #2A1B10 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

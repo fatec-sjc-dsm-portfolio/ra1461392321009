@@ -1,0 +1,155 @@
+{
+  "about": {
+    "name": "Joyce Silva",
+    "photo": "/profile.jpg",
+    "title": "Desenvolvedora Software",
+    "resume": "resume.pdf",
+    "shortDescription": "Java • Python • Azure • AWS ",
+    "description": "Desenvolvedora Backend com sólida base em arquitetura de APIs RESTful e experiência prática em bancos de dados relacionais como Oracle e PostgreSQL. Atualmente, curso o último semestre de Desenvolvimento de Software Multiplataforma na FATEC Jessen Vidal, onde aprofundo conhecimentos em sistemas escaláveis e segurança. Durante minha trajetória na TecSUS, atuei diretamente em projetos críticos de migração de dados e na implementação de processos de anonimização em conformidade com a LGPD. Tenho vivência em squads ágeis, utilizando Docker, AWS e pipelines de CI/CD para garantir entregas de valor com alta performance e estabilidade.",
+    "skills": [
+      "Java (Spring Boot)",
+      "Python (FastAPI/Flask)",
+      "TypeScript/JavaScript",
+      "PostgreSQL",
+      "Oracle",
+      "Docker",
+      "Git/GitHub/GitLab",
+      "AWS",
+      "Azure",
+      "MongoDB",
+      "Redis",
+      "LGPD Compliance"
+    ],
+    "experience": [
+      {
+        "company": "TecSUS",
+        "role": "Estagiária de Desenvolvimento de Software",
+        "duration": "Nov 2024 - Abr 2026",
+        "responsibilities": [
+          "Desenvolvimento de APIs robustas focadas em regras de negócio complexas.",
+          "Colaboração na migração de dados de Oracle para PostgreSQL, garantindo a consistência do ambiente.",
+          "Implementação de processos de anonimização de dados em conformidade com a LGPD.",
+          "Identificação e correção de bugs complexos e otimização de performance de consultas."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "FATEC Jessen Vidal",
+        "degree": "Tecnólogo em Desenvolvimento de Software Multiplataforma",
+        "year": "JUN 2023 - Em andamento"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Azure Fundamentals",
+        "issuer": "Microsoft",
+        "year": "Em Andamento"
+      },
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "year": "Em Andamento"
+      },
+      {
+        "name": "Fundamentos de Engenharia de Dados",
+        "issuer": "Data Science Academy",
+        "year": "2026"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 5,
+      "type": "Acadêmico",
+      "title": "App de Gerenciamento de Estoque",
+      "description": "Foi desenvolvido no 5º semestre de Desenvolvimento de Software Multiplataforma com objetivo é digitalizar e automatizar a gestão de almoxarifado, substituindo controles manuais e descentralizados que dificultam o rastreamento de itens e impactam a eficiência operacional.",
+      "tech": [
+        "Python",
+        "Spring Boot",
+        "Vue.js",
+        "PostgreSQL",
+        "Docker",
+        "Java"
+      ],
+      "link": "https://github.com/Code-Nine-FTC/API-2025.2"
+    },
+    {
+      "id": 4,
+      "type": "Acadêmico",
+      "title": "Estação Meteorológica",
+      "description": "Foi desenvolvido no 4º semestre de Desenvolvimento de Software Multiplataforma com o objetivo de criar um sistema de monitoramento para estações climáticas, permitindo a coleta e análise de dados em tempo real.",
+      "tech": [
+        "Python (FastAPI)",
+        "Typescript",
+        "PostgreSQL",
+        "Docker",
+        "React",
+        "Jira",
+        "Figma",
+        "MongoDB",
+        "AWS",
+        "Mosquitto"
+      ],
+      "link": "https://github.com/Code-Nine-FTC/API-2025.1"
+    },
+      {
+        "id":3 ,
+        "title": "Portal de Transparência",
+        "type": "Acadêmico",
+        "description": "Foi desenvolvido no 3º semestre de Desenvolvimento de Software Multiplataforma com o objetivo de criar uma plataforma para a Fundação de Apoio à Pesquisa de Pós-Graduandos (FAPG), com foco na divulgação de informações e transparência nos processos de apoio à pesquisa.",
+        "tech": [
+          "Typescript",
+          "Java 17",
+          "Python",
+          "React",
+          "MySQL",
+          "Slack",
+          "Jira",
+          "Figma", 
+          "Microsoft Teams"
+        ],
+        "link": "https://github.com/Sync-FATEC/API-2024.2-3SEM"
+      },
+      {
+        "id":2 ,
+        "title": "PostHelp",
+        "type": "Acadêmico",
+        "description": "Foi desenvolvido no 2º semestre de Desenvolvimento de Software Multiplataforma com o objetivo de criar um sistema de gerênciamento de chamados e serviços.",
+        "tech": [
+          "Typescript",
+          "React",
+          "Node.js",
+          "Express",
+          "MySQL",
+          "Slack",
+          "Excel",
+          "Figma"
+        ],
+        "link": "https://github.com/Code-Nine-FTC/API-2024.1"
+      },
+      {
+        "id": 1,
+        "title": "Criança Renal",
+        "type": "Acadêmico",
+        "description": "Foi desenvolvido no 1º semestre de Desenvolvimento de Software Multiplataforma com o objetivo de criar um site informativo que conscientize a população brasileira sobre as dificuldades que os pais de crianças com Doença Renal Crônica.",
+        "tech": [
+          "Python (Flask)",
+          "Html/CSS",
+          "JavaScript",
+          "MySQL",
+          "BootStrap",
+          "Slack",
+          "Excel",
+          "Figma",
+          "Docker"
+        ],
+        "link": "https://github.com/TeamHiveAPI/API-2023.2"
+      }   
+  ],
+  "contact": {
+    "email": "joycepereirasbs@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/joyce-silva-79a4b9287/",
+    "github": "https://github.com/joycesilvaaa"
+  }
+}
