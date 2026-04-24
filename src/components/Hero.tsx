@@ -4,9 +4,10 @@ interface HeroProps {
   title: string;
   shortDescription: string;
   resume: string;
+  image: string;
 }
 
-export function Hero({ title, shortDescription, resume }: HeroProps) {
+export function Hero({ title, shortDescription, resume, image }: HeroProps) {
   return (
     <section id="inicio" className="min-h-screen flex flex-col justify-center px-6 md:px-20 border-b-2 border-chess-ebony relative overflow-hidden bg-chess-cream pt-16">
       
@@ -39,7 +40,6 @@ export function Hero({ title, shortDescription, resume }: HeroProps) {
             </p>
           </div>
           
-          {/* Botões Reorganizados */}
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <a href="#contato" className="group px-8 py-4 bg-chess-ebony text-chess-cream text-[10px] font-black uppercase tracking-[0.4em] hover:bg-chess-ebony/90 transition-all flex items-center justify-center gap-3 shadow-[8px_8px_0px_rgba(33,29,26,0.2)]">
               Contato <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -57,12 +57,11 @@ export function Hero({ title, shortDescription, resume }: HeroProps) {
           </div>
         </div>
 
-        {/* Coluna da Direita: Imagem */}
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
           <div className="relative w-full max-w-[450px] aspect-[4/5] border-4 border-chess-ebony p-2 bg-chess-cream shadow-[-16px_16px_0px_#211d1a] group">
             <div className="absolute inset-0 bg-chess-ebony/10 group-hover:bg-transparent transition-colors z-10"></div>
             <img 
-              src="/profile.jpg" 
+              src={image} 
               alt="Joyce Silva - Desenvolvedora Backend" 
               className="w-full h-full object-cover grayscale contrast-125"
             />
@@ -71,7 +70,6 @@ export function Hero({ title, shortDescription, resume }: HeroProps) {
 
       </div>
 
-      {/* Badge Vertical Lateral */}
       <div className="absolute right-6 bottom-12 hidden xl:block">
         <p className="text-[9px] font-black uppercase tracking-[1em] opacity-20 [writing-mode:vertical-rl] rotate-180">
           {new Date().getFullYear()} © Joyce Silva
