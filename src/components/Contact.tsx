@@ -29,20 +29,30 @@ export function Contact({ contact, name }: ContactProps) {
     e.preventDefault();
     setLoading(true);
 
-    const data = new FormData(e.currentTarget);
-    const values = Object.fromEntries(data);
+    const formDataObj = new FormData(e.currentTarget);
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
+      setStatus("Erro: A chave de acesso do Web3Forms não está configurada no ambiente.");
+      setLoading(false);
+      return;
+    }
+
+    formDataObj.append("access_key", accessKey);
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        body: JSON.stringify(values),
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataObj
       });
 
-      if (res.ok) {
-        setStatus("Mensagem enviada com sucesso! Entrarei em contacto em breve.");
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("Mensagem enviada com sucesso! Entrarei em contato em breve.");
         setFormData({ name: '', email: '', message: '' });
       } else {
-        setStatus("Ocorreu um erro. Tente novamente mais tarde.");
+        setStatus("Erro ao enviar. Verifique sua chave do Web3Forms.");
       }
     } catch {
       setStatus("Erro na conexão. Tente novamente.");

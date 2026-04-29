@@ -32,7 +32,7 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: ${{ secrets.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
